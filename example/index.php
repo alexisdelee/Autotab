@@ -13,9 +13,10 @@
 
     <script type="text/javascript" src="../autotab.js"></script>
     <script type="text/javascript">
-      Autotab.listen(document.querySelectorAll("input"), 1, (keys, els) => {
+      let login = new Autotab();
+      login.listen(document.querySelector("body"), 1, (keys, els) => {
         alert(keys);
-        Autotab.clear(els);
+        login.clear(els);
       });
     </script>
   </body>
